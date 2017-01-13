@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.secret_key {
+  background-color: black;
+  outline: none;
+  text-transform: uppercase
+}
+
+.pic {
+  max-width: 95%;
+  min-width: 90%;
+}
+
+.target {
+  margin-top: 5%;
+}
