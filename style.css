@@ -8,14 +8,27 @@ body {
 .secret_key {
   background-color: black;
   outline: none;
-  text-transform: uppercase
+  border: none;
+  position: absolute;
+  margin: auto;
+  font-size: 600%;
+  text-align: center;
+
 }
 
 .pic {
   max-width: 95%;
   min-width: 90%;
+  border: 1px solid white;
 }
 
 .target {
   margin-top: 5%;
+}
+
+.graphic {
+  height:auto;
+  margin: auto;
+  text-align:center;
+  position:relative;
 }
