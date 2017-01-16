@@ -13,7 +13,8 @@ body {
   margin: auto;
   font-size: 600%;
   text-align: center;
-
+  bottom: 40%;
+  right: 7%;
 }
 
 .pic {
@@ -27,8 +28,12 @@ body {
 }
 
 .graphic {
-  height:auto;
+  height: auto;
   margin: auto;
-  text-align:center;
-  position:relative;
+  text-align: center;
+  position: relative;
+}
+
+.hiddentext {
+  display: none;
 }
