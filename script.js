@@ -2,6 +2,7 @@ $("#password").on('keyup', function() {
   event.preventDefault();
   var value = this.password.value;
   var check = value.toUpperCase();
+
   if (check.length === 8) {
     if (check === "FUJWDBRY") {
       valveOne();
@@ -12,12 +13,10 @@ $("#password").on('keyup', function() {
     } else if (check === "URGNADIE") {
       valveThree();
       this.password.value = '';
-    }
-    else if (check === "IMDUMBAF") {
+    } else if (check === "IMDUMBAF") {
       valveFour();
       this.password.value = '';
-    }
-    else if (check === "THXSLASH") {
+    } else if (check === "THXSLASH") {
       valveFive();
       this.password.value = '';
     } else if (check === "RICKROLL") {
@@ -27,13 +26,7 @@ $("#password").on('keyup', function() {
       wrongAnswer();
       this.password.value = '';
     }
-  } else {
-    console.log('working');
   }
-
-  // if check.length === 8 {
-  //   console.log( check );
-  // }
 });
 
 
@@ -72,42 +65,48 @@ $("#password").on('keyup', function() {
 function valveOne() {
     var image = document.querySelectorAll("img")[0];
     var source = image.src = image.src.replace("assets/gas_valve_system_background.gif","assets/gas_valve_system_correct1.gif");
+    setTimeout(myTimer, 3000)
 }
 
 function valveTwo() {
     var image = document.querySelectorAll("img")[0];
     var source = image.src = image.src.replace("assets/gas_valve_system_background.gif","assets/gas_valve_system_correct2.gif");
+    setTimeout(myTimer, 3000)
 }
 
 function valveThree() {
     var image = document.querySelectorAll("img")[0];
     var source = image.src = image.src.replace("assets/gas_valve_system_background.gif","assets/gas_valve_system_correct3.gif");
+    setTimeout(myTimer, 3000)
 }
 
 function valveFour() {
     var image = document.querySelectorAll("img")[0];
     var source = image.src = image.src.replace("assets/gas_valve_system_background.gif","assets/gas_valve_system_correct4.gif");
+    setTimeout(myTimer, 3000)
 }
 
 function valveFive() {
     var image = document.querySelectorAll("img")[0];
     var source = image.src = image.src.replace("assets/gas_valve_system_background.gif","assets/gas_valve_system_correct5.gif");
+    setTimeout(myTimer, 3000)
 }
 
 function wrongAnswer() {
     var image = document.querySelectorAll("img")[0];
     var source = image.src = image.src.replace("assets/gas_valve_system_background.gif","assets/gas_valve_system_incorrect.gif");
+    setTimeout(myTimer, 3000)
 }
 
 function rickRoll() {
     var image = document.querySelectorAll("img")[0];
     var source = image.src = image.src.replace("assets/gas_valve_system_background.gif","assets/rickroll.gif");
+    setTimeout(myTimer, 3000)
 }
 
 
-myVar = setTimeout(myTimer);
 function myTimer() {
-    var image = document.querySelectorAll("img")[0];
-    var source = image.src = "assets/gas_valve_system_background.gif";
-    clearTimeout(myVar);
+  var image = document.querySelectorAll("img")[0];
+  var source = image.src = "assets/gas_valve_system_background.gif";
+  clearTimeout();
 }
