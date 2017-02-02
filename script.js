@@ -69,7 +69,6 @@ function wrongAnswer() {
   document.getElementById('password').className = 'hiddentext';
   var image = document.querySelectorAll("img")[0];
   var source = image.src = image.src.replace("assets/gas_valve_system_background.gif","assets/gas_valve_system_incorrect.gif");
-  document.getElementById("container").className = "tempcolor";
   setTimeout(myTimer, 3000)
 }
 
