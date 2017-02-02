@@ -18,10 +18,9 @@ body {
 }
 
 .pic {
-  max-width: 95%;
-  min-width: 90%;
+  max-width: 100%;
+  min-width: 100%;
   border: none;
-  margin-top: 15%;
 }
 
 .target {
@@ -29,12 +28,22 @@ body {
 }
 
 .graphic {
-  height: auto;
-  margin: auto;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   position: relative;
 }
 
 .hiddentext {
   display: none;
+}
+
+.tempcolor {
+  background-color: #D10000;
+  -webkit-transition: background-color .001s ease-in; /* Safari */
+          transition: background-color .001s ease-in;
+  -webkit-transition-delay: .001s; /* Safari */
+          transition-delay: .001s;
 }

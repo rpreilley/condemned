@@ -30,38 +30,6 @@ $("#password").on('keyup', function() {
 });
 
 
-// $( "#password" ).submit(function(event) {
-//   event.preventDefault();
-//   var value = this.password.value;
-//   var check = value.toUpperCase();
-
-//   if (check === "FUJWDBRY") {
-//     valveOne();
-//     this.password.value = '';
-//   } else if (check === "ESGSUCKS") {
-//     valveTwo();
-//     this.password.value = '';
-//   } else if (check === "URGNADIE") {
-//     valveThree();
-//     this.password.value = '';
-//   }
-//   else if (check === "IMDUMBAF") {
-//     valveFour();
-//     this.password.value = '';
-//   }
-//   else if (check === "THXSLASH") {
-//     valveFive();
-//     this.password.value = '';
-//   } else if (check === "RICKROLL") {
-//     rickRoll();
-//     this.password.value = '';
-//   } else {
-//     wrongAnswer();
-//     this.password.value = '';
-//   }
-// });
-
-
 function valveOne() {
   document.getElementById('password').className = 'hiddentext';
   var image = document.querySelectorAll("img")[0];
@@ -101,6 +69,7 @@ function wrongAnswer() {
   document.getElementById('password').className = 'hiddentext';
   var image = document.querySelectorAll("img")[0];
   var source = image.src = image.src.replace("assets/gas_valve_system_background.gif","assets/gas_valve_system_incorrect.gif");
+  document.getElementById("container").className = "tempcolor";
   setTimeout(myTimer, 3000)
 }
 
